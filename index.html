@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <div class="filters">
+    <button data-cat="all" class="active">Show All</button>
+    <button data-cat="nature">Nature</button>
+    <button data-cat="city">City</button>
+    <button data-cat="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/seed/n1/600/400" class="nature" alt="Nature 1">
+    <img src="https://picsum.photos/seed/c1/600/400" class="city" alt="City 1">
+    <img src="https://picsum.photos/seed/a1/600/400" class="animals" alt="Animal 1">
+    <img src="https://picsum.photos/seed/n2/600/400" class="nature" alt="Nature 2">
+    <img src="https://picsum.photos/seed/c2/600/400" class="city" alt="City 2">
+    <img src="https://picsum.photos/seed/a2/600/400" class="animals" alt="Animal 2">
+    <img src="https://picsum.photos/seed/c3/600/400" class="city" alt="City 3">
+    <img src="https://picsum.photos/seed/a3/600/400" class="animals" alt="Animal 3">
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <button id="lb-close" class="close">✖</button>
+    <button id="lb-prev" class="prev">❮</button>
+    <img id="lightbox-img" src="" alt="">
+    <button id="lb-next" class="next">❯</button>
+    <div id="lb-info"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
